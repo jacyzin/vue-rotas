@@ -5,6 +5,7 @@ import Home from './views/Home.vue'
 import ContatoDetalhes from './views/contatos/ContatoDetalhes.vue'
 import ContatosHome from './views/contatos/ContatosHome.vue'
 import ContatoEditar from './views/contatos/ContadoEditar'
+import Erro404 from './views/Erro404'
 
 Vue.use(VueRouter);
 
@@ -38,6 +39,9 @@ export default new VueRouter({
         {
             path: '/',
             component: Home
+        }, {
+            path: '*',
+            component: Erro404
         }
     ]
 });

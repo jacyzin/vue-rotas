@@ -20,7 +20,7 @@
           }
         },*/
       beforeRouteUpdate(to, from , next) {
-          this.id = to.params.id
+          this.id = to.params.id;
           next()
       },
         created() {
